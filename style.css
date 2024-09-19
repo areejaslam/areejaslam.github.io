@@ -1,0 +1,58 @@
+#body1
+{
+  background-image: url(images/greyout.png) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#centerttl
+{
+    font-size:32px;
+    display:flex;
+    color:aliceblue;
+    align-items: center;
+    width: 50%;
+    height:100px;
+    /*border:2px solid red;*/
+
+    position: relative;
+    top:220px;
+    left:300px;
+
+}
+
+#subtitle1
+{
+    font-size:20px;
+    display:flex;
+    color:aliceblue;
+    align-items: center;
+    width: 40%;
+    height:80px;
+    /*border:2px solid red;*/
+    padding-bottom: 50px;
+
+    position: relative;
+    top:180px;
+    left:350px;
+
+}
+
+#subtitle2
+{
+    font: size 15px;
+    display:flex;
+    color:aliceblue;
+    align-items: center;
+    width: 50%;
+    height:30px;
+    /*border:2px solid red;*/
+
+    position: relative;
+    top:180px;
+    left:300px;
+
+}

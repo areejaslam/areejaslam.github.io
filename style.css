@@ -1,58 +1,127 @@
-#body1
-{
-  background-image: url(images/greyout.png) ;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+#body1 {
+    background-image: url(images/blackout.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;  /* Keeps the body the full height of the viewport */
+    margin: 0;
+  }
+  
+  /* Center the boxes only */
+  #centerttl, #subtitle1, #subtitle2, #subtitle3, #newpara{
+    font-size: 3vw; /* Adjust for each section */
+    color: aliceblue;
+    text-align: center;        /* Center text within each box */
+    display: flex;
+    justify-content: center;   /* Center content horizontally */
+    align-items: center;       /* Center content vertically */
+    margin: 2vh auto;          /* Vertical margin and auto for horizontal centering */
+    width: 80%;                /* Set width of the boxes (adjust as needed) */
+    height: auto;              /* Adjust height automatically to fit content */
+  }
+  
+  /* Specific font sizes for each subtitle */
+  #centerttl {
+    font-size: 3vw;  /* Larger for the main title */
+  }
+  
+  #subtitle1 {
+    font-size: 2vw;  /* Slightly smaller for the first subtitle */
+  }
+  
+  #subtitle2 {
+    font-size: 1.8vw;  /* Smaller for the second subtitle */
+    margin-bottom:30%
+  }
+  
+  #subtitle3 {
+    font-size: 1.5vw;  /* Same for the third subtitle */
+  }
 
-}
+  #newpara {
+    font-size: 1.7vw;  /* Smaller for the second subtitle */
+    margin-bottom:20%;
+    color: aliceblue;
+  }
 
-#centerttl
-{
-    font-size:32px;
+  .circular-image {
+    width: 150px; /* Set a width for the image */
+    height: 150px; /* Set a height for the image */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the circle */
+    border: 2px solid #fff; /* Optional: Add a white border */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Horizontally center the image */
+  }
+
+  .projectheadings{
+    border: 2px solid red; /* Set border */
+    font-size: 1.2vw;
+    color: red; /* Text color */
+    box-sizing: border-box;
+    width:15%;
+    margin: 2vh 10% 2vh 42%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+
+ }
+
+  .flex-container{
+    width:100%;
+    height:auto; 
     display:flex;
-    color:aliceblue;
-    align-items: center;
-    width: 50%;
-    height:100px;
-    /*border:2px solid red;*/
+ }
 
-    position: relative;
-    top:220px;
-    left:300px;
+  #pastprojects{
+    border: 2px solid red; /* Set border */
+    font-size: 1.5vw;
+    color: red; /* Text color */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 2vh 10% 2vh 10%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+    width: 20%; /* Adjust width as needed */
+    padding: 10px; /* Optional padding */
+    box-sizing: border-box; /* Include padding in width */
+ }
 
-}
+ #currentprojects{
+    border: 2px solid red; /* Set border */
+    font-size: 1.5vw;
+    color: red; /* Text color */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 2vh 10% 2vh 1%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+    width: 20%; /* Adjust width as needed */
+    padding: 10px; /* Optional padding */
+    box-sizing: border-box; /* Include padding in width */
+ }
 
-#subtitle1
-{
-    font-size:20px;
-    display:flex;
-    color:aliceblue;
-    align-items: center;
-    width: 40%;
-    height:80px;
-    /*border:2px solid red;*/
-    padding-bottom: 50px;
+ #conted{
+    border: 2px solid red; /* Set border */
+    font-size: 1.5vw;
+    color: red; /* Text color */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 2vh 10% 2vh 1%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+    width: 20%; /* Adjust width as needed */
+    padding: 10px; /* Optional padding */
+    box-sizing: border-box; /* Include padding in width */
+ }
 
-    position: relative;
-    top:180px;
-    left:350px;
+ 
 
-}
 
-#subtitle2
-{
-    font: size 15px;
-    display:flex;
-    color:aliceblue;
-    align-items: center;
-    width: 50%;
-    height:30px;
-    /*border:2px solid red;*/
 
-    position: relative;
-    top:180px;
-    left:300px;
+ 
 
-}
+
+
+
+
+
+
+
+
+  

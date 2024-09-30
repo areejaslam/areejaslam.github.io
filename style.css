@@ -105,6 +105,33 @@
   gap: 1rem;
 }
 
+/* Styling for the button-like links */
+a.btn {
+  display: inline-block; /* Make the <a> act like a block element for padding */
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-decoration: none; /* Remove underline */
+  color: white; /* Adjust text color */
+  background-color: #4CAF50; /* Adjust background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Adjust text size */
+  font-family: sans-serif; /* Adjust font family */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+a.btn:hover {
+  background-color: #45a049; /* Add hover effect */
+}
+
+/* Specific colors for each button */
+.btn-color-1 {
+  background-color: #007BFF; /* Change as per your design */
+}
+
+.btn-color-2 {
+  background-color: #28A745; /* Change as per your design */
+}
+
   
   nav,
 .nav-links {
@@ -208,6 +235,26 @@ nav {
   padding-bottom:30%;
 }
 
+.skillscontedbox {
+  border: 2px solid antiquewhite; /* Set border for each box */
+  border-radius: 15px;
+  font-size: 1.2vw;
+  color:antiquewhite; /* Text color */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 1rem; /* Add spacing around each box */
+  flex: 1; /* Allow boxes to grow equally */
+  padding: 1rem; /* Optional padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  min-width: 160px; /* Optional: Set a minimum width for the boxes */
+}
+
+.edandexpbox p { /* For paragraph text */
+  line-height: 0.02; /* Adjust as necessary */
+}
+
+
 
   .circular-image {
     width: 150px; /* Set a width for the image */
@@ -220,17 +267,28 @@ nav {
   }
 
   .subheadings{
-    border: 2px solid rgb(255, 248, 248); /* Set border */
     font-size: 1.8vw;
     color: black; /* Text color */
     box-sizing: border-box;
     justify-content:center;
     text-align:center;
     width:15%;
-    margin: 2vh 10% 2vh 42%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+    margin: 4vh 10% 2vh 42%; /* Top, right, bottom, left margins (adjust left margin as needed) */
     padding-bottom:4rem;
 
  }
+
+ .subheadings-2{
+  font-size: 1.8vw;
+  color:antiquewhite; /* Text color */
+  box-sizing: border-box;
+  justify-content:center;
+  text-align:center;
+  width:25%;
+  margin: 4vh 10% 2vh 38%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+  padding-bottom:4rem;
+
+}
 
 .project-box {
   border: 2px solid black; /* Set border for each box */
@@ -243,7 +301,7 @@ nav {
   width: 18%; /* Adjust width of each box */
   padding: 1rem; /* Optional padding */
   box-sizing: border-box; /* Include padding in width calculation */
-  height: 400px; /* Set a fixed height (adjust as needed) */
+  height: 420px; /* Set a fixed height (adjust as needed) */
   overflow: hidden; /* Prevent overflow of content */
 }
 

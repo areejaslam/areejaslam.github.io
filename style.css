@@ -110,17 +110,18 @@ a.btn {
   display: inline-block; /* Make the <a> act like a block element for padding */
   padding: 10px 20px; /* Adjust padding as needed */
   text-decoration: none; /* Remove underline */
-  color: white; /* Adjust text color */
-  background-color: #4CAF50; /* Adjust background color */
+  color:rgb(17, 54, 17); /* Adjust text color */
+  background-color: rgb(223, 206, 184); /* Adjust background color */
   border: none; /* Remove default border */
-  border-radius: 5px; /* Add rounded corners */
+  border-radius: 10px; /* Add rounded corners */
   font-size: 16px; /* Adjust text size */
-  font-family: sans-serif; /* Adjust font family */
+  font-family:'Ubuntu-Light'; /* Adjust font family */
   cursor: pointer; /* Pointer cursor on hover */
 }
 
 a.btn:hover {
-  background-color: #45a049; /* Add hover effect */
+  background-color: #2e5830; /* Add hover effect */
+  color:yellow;
 }
 
 /* Specific colors for each button */

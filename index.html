@@ -8,52 +8,114 @@
 </head>
 
 <body id="body1">
-
-    <div id="centerttl">
-        <h1>AREEJ ASLAM</h1>
-    </div>
-
-    <div id="subtitle1">
-        <h1>Firmware Engineer</h1>
-    </div>
-
-    <div id="subtitle2">
-        <p>I am an Electrical Engineering graduate from the 
-        University of British Columbia with a focus in embedded systems.
-        Feel free to have a look at some of the cool projects that I've worked on!
-        </p>
-    </div>
-
-    <img src="images/avatar.jpg" alt="Circular Image of Areej" class="circular-image">
-
-    <div id="newpara">
-        <p>
-            I graduated with Electrical Engineering in 2024 and my interest lies
-            in firmware development and embedded systems. I have done an 8 month internship
-            in firmware for an engineering design consultancy as well as several firmware projects
-            for my courses and hobby projects. A portfolio of my work is shown below.
-        </p>
-    </div>
-
-    <div class="projectheadings">
-        <h1>Past Projects</h1>
-    </div>
-
-    <div class="flex-container">
-        <div id="pastprojects">
-            <img src="images/avatar.jpg" alt="Circular Image of Areej" class="circular-image">
-            <p>Past Projects</p>
+    <div class="firstpagebox">
+        <nav id="desktop-nav">
+            <div class="logo"></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <section id="profile">
+            <div class="section__pic-container">
+              <img src="./images/mypic.png" alt="Areej Aslam profile picture" />
+            </div>
+            <div class="section__text">
+              <p class="section__text__p1">Hello, I'm</p>
+              <h1 class="title">Areej Aslam</h1>
+              <p class="section__text__p2">Firmware Engineer</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./images/avatar.jpg')"
+                >
+                  Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Info
+                </button>
+              </div>
+              <div id="socials-container">
+                <a href="https://github.com/yourprofile">
+                  <img src="images/github.png" alt="GitHub" class="social-image">
+                </a>
+                <a href="https://linkedin.com/in/yourprofile">
+                  <img src="images/linkedin.png" alt="LinkedIn" class="social-image">
+                </a>
+              </div>              
+            </div>
+          </section>
+    
+    
+    
+          <div class="aboutme">
+            <h2 class="subheadings">About me</h2>
+            <div class="aboutme-container">
+                <!-- Picture on the left -->
+                <div class="aboutme-pic">
+                    <img src="images/mypic.png" alt="About me picture" />
+                </div>
+                
+                <!-- Boxes on the right -->
+                <div class="flex-container1">
+                    <div class="edandexpbox">
+                        <h3>Experience</h3>
+                        <p>8 months</p>
+                        <p>Firmware Engineering</p>
+                    </div>
+                    <div class="edandexpbox">
+                        <h3>Education</h3>
+                        <p>BASc Electrical Engineering</p>
+                        <p>University of British Columbia</p>
+                    </div>
+                </div>
+            </div>
+            <p>I am an Electrical Engineering graduate from the University of British Columbia</p>
         </div>
-        <div id="currentprojects">
-            <img src="images/avatar.jpg" alt="Circular Image" class="circular-image">
-            <p>Another Project</p>
-        </div>
-        <div id="conted">
-            <img src="images/avatar.jpg" alt="Circular Image" class="circular-image">
-            <p>Yet Another Project</p>
-        </div>
+        
+        
+
+    <div class="skillsandconted">
+        <h2 class="subheadings">Skills and Continued Education</h2>
     </div>
     
+    
+     
+<div class="myprojects">
+    <h2 class="subheadings">Projects</h2>
+
+    <div class="flex-container2">
+        <div class="project-box">
+            <img src="images/avatar.jpg" alt="Circular Image of Areej" class="circular-image">
+            <p>Cosmic Ray Detector System</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed! Nam quis exercitationem quos nobis molestiae nisi iste? Nemo consequatur, eos laboriosam numquam fuga natus itaque quas possimus neque aliquid.</p>
+        </div>
+        <div class="project-box">
+            <img src="images/avatar.jpg" alt="Circular Image" class="circular-image">
+            <p>Ultrawide-band Proximity Detector</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed! Nam quis exercitationem quos nobis molestiae nisi iste? Nemo consequatur, eos laboriosam numquam fuga natus itaque quas possimus neque aliquid.</p>
+        </div>
+        <div class="project-box">
+            <img src="images/avatar.jpg" alt="Circular Image" class="circular-image">
+            <p>Coin Picking Robot</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed! Nam quis exercitationem quos nobis molestiae nisi iste? Nemo consequatur, eos laboriosam numquam fuga natus itaque quas possimus neque aliquid.</p>
+        </div>
+        <!-- Corrected this project-box -->
+        <div class="project-box">
+            <img src="images/avatar.jpg" alt="Circular Image" class="circular-image">
+            <p>RPI Desktop Replacement</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sed! Nam quis exercitationem quos nobis molestiae nisi iste? Nemo consequatur, eos laboriosam numquam fuga natus itaque quas possimus neque aliquid.</p>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 </body>

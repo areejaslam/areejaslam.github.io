@@ -1,49 +1,213 @@
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('fonts/Ubuntu-Light.ttf') format('truetype'); /* Adjust this if you have other formats like .woff or .woff2 */
+  font-weight: normal; /* You can change this if necessary */
+  font-style: normal; /* You can change this if necessary */
+}
+
+
 #body1 {
-    background-image: url(images/blackout.png);
+    background-image: url(images/circpic.jpg); /* Set the background image */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    font-family: 'Ubuntu-Light', sans-serif; /* Fallback font */    background-size: cover;
     min-height: 100vh;  /* Keeps the body the full height of the viewport */
     margin: 0;
   }
-  
-  /* Center the boxes only */
-  #centerttl, #subtitle1, #subtitle2, #subtitle3, #newpara{
-    font-size: 3vw; /* Adjust for each section */
-    color: aliceblue;
-    text-align: center;        /* Center text within each box */
-    display: flex;
-    justify-content: center;   /* Center content horizontally */
-    align-items: center;       /* Center content vertically */
-    margin: 2vh auto;          /* Vertical margin and auto for horizontal centering */
-    width: 80%;                /* Set width of the boxes (adjust as needed) */
-    height: auto;              /* Adjust height automatically to fit content */
-  }
-  
-  /* Specific font sizes for each subtitle */
-  #centerttl {
-    font-size: 3vw;  /* Larger for the main title */
-  }
-  
-  #subtitle1 {
-    font-size: 2vw;  /* Slightly smaller for the first subtitle */
-  }
-  
-  #subtitle2 {
-    font-size: 1.8vw;  /* Smaller for the second subtitle */
-    margin-bottom:30%
-  }
-  
-  #subtitle3 {
-    font-size: 1.5vw;  /* Same for the third subtitle */
-  }
 
-  #newpara {
-    font-size: 1.7vw;  /* Smaller for the second subtitle */
-    margin-bottom:20%;
-    color: aliceblue;
+  .firstpagebox {
+    border: 2px solid green;
+    background-color: rgba(34, 48, 39, 0.95);
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+/* Existing CSS rules remain unchanged */
+
+
+.circular-image {
+  width: 300px; /* New width for the image (doubled) */
+  height: 300px; /* New height for the image (doubled) */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the circle */
+  border: 2px solid #fff; /* Optional: Add a white border */
+  display: block; /* Center the image */
+  margin: 0; /* Remove margins to reduce padding */
+}
+
+.social-image {
+  width: 50px; /* Adjust the width as per your requirement */
+  height: 50px; /* Adjust the height as per your requirement */
+  object-fit: cover; /* Ensures the image keeps its aspect ratio and fits within the dimensions */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+@media screen and (max-width: 600px) {
+  .social-image {
+    width: 30px;
+    height: 30px;
   }
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 330px;
+  width: 330px;
+  margin: auto 0;
+}
+
+.section__pic-container img {
+  width: 100%; /* Set to 100% to fill the container */
+  height: 100%; /* Set to 100% to maintain aspect ratio */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
+  border: 2px solid antiquewhite; /* Optional: Add a border */
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color:antiquewhite;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color:antiquewhite;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color:antiquewhite;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+  
+  nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.nav-links a {
+  color:antiquewhite; /* your desired color here */; /* e.g., blue, #ff0000, rgba(0, 0, 255, 1) */
+  text-decoration: none; /* optional, to remove underline */
+}
+
+.nav-links a:hover {
+  color: yellow;/* color on hover */; /* e.g., darkblue, #00ff00 */
+}
+
+/* Container for the picture and the edandexpbox elements */
+.aboutme{
+  border: 2px solid rgb(128, 0, 0);
+  background-color: rgb(224, 209, 189);
+  padding-bottom: 20%;
+}
+
+.aboutme-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items at the start */
+  margin: 0 10px; /* Add horizontal margin to the container */
+}
+
+.aboutme-pic {
+  width: 30%; /* Image section takes up 30% of the width */
+  margin-right: 20px; /* Space between image and boxes */
+}
+
+.aboutme-pic img {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add some border radius for style */
+}
+
+.flex-container1 {
+  display: flex; /* Use flexbox for the boxes */
+  flex-direction: row; /* Stack boxes horizontally */
+  width: 70%; /* Take up remaining width */
+  margin-top: 50px;
+  justify-content: space-between; /* Add space between boxes */
+}
+
+.edandexpbox {
+  border: 2px solid black; /* Set border for each box */
+  border-radius: 15px;
+  font-size: 1.2vw;
+  color: black; /* Text color */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 1rem; /* Add spacing around each box */
+  flex: 1; /* Allow boxes to grow equally */
+  padding: 1rem; /* Optional padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  min-width: 160px; /* Optional: Set a minimum width for the boxes */
+}
+
+.edandexpbox p { /* For paragraph text */
+  line-height: 0.02; /* Adjust as necessary */
+}
+
+
+.flex-container2 {
+  display: flex;
+  justify-content: center; /* Center the boxes */
+  align-items: stretch; /* Stretch boxes to the same height */
+  flex-wrap: wrap; /* Allow boxes to wrap if needed */
+  width: 100%;
+  gap: 10px; /* 10px gap between the boxes */
+  height: auto; /* Adjust height based on content */
+}
+
+.myprojects{
+  color:black;
+  background-color:rgb(224, 209, 189);
+  opacity:95%;
+  border:2px solid green;
+  padding-bottom:30%;
+}
+
+.skillsandconted{
+  color:black;
+  border:2px solid green;
+  padding-bottom:30%;
+}
+
 
   .circular-image {
     width: 150px; /* Set a width for the image */
@@ -55,61 +219,37 @@
     margin: 0 auto; /* Horizontally center the image */
   }
 
-  .projectheadings{
-    border: 2px solid red; /* Set border */
-    font-size: 1.2vw;
-    color: red; /* Text color */
+  .subheadings{
+    border: 2px solid rgb(255, 248, 248); /* Set border */
+    font-size: 1.8vw;
+    color: black; /* Text color */
     box-sizing: border-box;
+    justify-content:center;
+    text-align:center;
     width:15%;
     margin: 2vh 10% 2vh 42%; /* Top, right, bottom, left margins (adjust left margin as needed) */
+    padding-bottom:4rem;
 
  }
 
-  .flex-container{
-    width:100%;
-    height:auto; 
-    display:flex;
- }
+.project-box {
+  border: 2px solid black; /* Set border for each box */
+  font-size: 1.2vw;
+  color: black; /* Text color */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 1rem; /* Add spacing around each box */
+  width: 18%; /* Adjust width of each box */
+  padding: 1rem; /* Optional padding */
+  box-sizing: border-box; /* Include padding in width calculation */
+  height: 400px; /* Set a fixed height (adjust as needed) */
+  overflow: hidden; /* Prevent overflow of content */
+}
 
-  #pastprojects{
-    border: 2px solid red; /* Set border */
-    font-size: 1.5vw;
-    color: red; /* Text color */
-    display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    margin: 2vh 10% 2vh 10%; /* Top, right, bottom, left margins (adjust left margin as needed) */
-    width: 20%; /* Adjust width as needed */
-    padding: 10px; /* Optional padding */
-    box-sizing: border-box; /* Include padding in width */
- }
 
- #currentprojects{
-    border: 2px solid red; /* Set border */
-    font-size: 1.5vw;
-    color: red; /* Text color */
-    display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    margin: 2vh 10% 2vh 1%; /* Top, right, bottom, left margins (adjust left margin as needed) */
-    width: 20%; /* Adjust width as needed */
-    padding: 10px; /* Optional padding */
-    box-sizing: border-box; /* Include padding in width */
- }
 
- #conted{
-    border: 2px solid red; /* Set border */
-    font-size: 1.5vw;
-    color: red; /* Text color */
-    display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    margin: 2vh 10% 2vh 1%; /* Top, right, bottom, left margins (adjust left margin as needed) */
-    width: 20%; /* Adjust width as needed */
-    padding: 10px; /* Optional padding */
-    box-sizing: border-box; /* Include padding in width */
- }
-
+ 
  
 
 

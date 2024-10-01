@@ -334,9 +334,16 @@ nav {
   border-radius:8%;
 }
 
+.contact{
+  text-align:center;
+  color:antiquewhite;
+  padding-bottom:10%;
+}
 
 
- 
+html {
+  scroll-behavior: smooth;
+}
  
 
 

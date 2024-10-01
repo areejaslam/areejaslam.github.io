@@ -162,9 +162,9 @@ nav {
 
 /* Container for the picture and the edandexpbox elements */
 .aboutme{
-  border: 2px solid rgb(128, 0, 0);
   background-color: rgb(224, 209, 189);
   padding-bottom: 20%;
+  padding-top:3px;
 }
 
 .aboutme-container {
@@ -230,10 +230,20 @@ nav {
   padding-bottom:30%;
 }
 
+.flex-containerskills{
+  display: flex;
+  justify-content: center; /* Centers the boxes horizontally */
+  align-items: flex-start; /* Aligns boxes to the top (vertically) */
+  gap: 1rem; /* Adds spacing between the boxes */
+  margin: 0 auto; /* Centers the flex container */
+  padding: 1rem;
+  max-width: 800px; /* Optional: Set a maximum width to control layout */
+  flex-wrap: wrap; /* Ensure boxes wrap on smaller screens */
+}
+
 .skillsandconted{
   color:black;
-  border:2px solid green;
-  padding-bottom:30%;
+  padding-bottom:20%;
 }
 
 .skillscontedbox {
@@ -243,12 +253,21 @@ nav {
   color:antiquewhite; /* Text color */
   display: flex;
   flex-direction: column; /* Stack content vertically */
-  align-items: center; /* Center content horizontally */
   margin: 1rem; /* Add spacing around each box */
   flex: 1; /* Allow boxes to grow equally */
   padding: 1rem; /* Optional padding */
+  padding-left:20px;
+  height:230px;
   box-sizing: border-box; /* Include padding in width calculation */
   min-width: 160px; /* Optional: Set a minimum width for the boxes */
+}
+
+.skillscontedbox h3{
+  text-align:center;
+}
+.skillsleft{
+  text-align: left;
+  width:50%;
 }
 
 .edandexpbox p { /* For paragraph text */
@@ -291,6 +310,15 @@ nav {
 
 }
 
+.squareimage {
+  width: 160px; /* Set a width for the image */
+  height: 160px; /* Set a height for the image */
+  border-radius: 20%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the circle */
+  display: block; /* Center the image */
+  padding:10px;
+}
+
 .project-box {
   border: 2px solid black; /* Set border for each box */
   font-size: 1.2vw;
@@ -300,10 +328,11 @@ nav {
   align-items: center; /* Center content horizontally */
   margin: 1rem; /* Add spacing around each box */
   width: 18%; /* Adjust width of each box */
-  padding: 1rem; /* Optional padding */
   box-sizing: border-box; /* Include padding in width calculation */
-  height: 420px; /* Set a fixed height (adjust as needed) */
+  height: 425px; /* Set a fixed height (adjust as needed) */
   overflow: hidden; /* Prevent overflow of content */
+  padding:4px;
+  border-radius:8%;
 }
 
 

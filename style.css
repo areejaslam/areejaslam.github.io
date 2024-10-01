@@ -233,11 +233,11 @@ nav {
 .flex-containerskills{
   display: flex;
   justify-content: center; /* Centers the boxes horizontally */
-  align-items: flex-start; /* Aligns boxes to the top (vertically) */
+  align-items: stretch; /* Ensures all boxes have the same height */
   gap: 1rem; /* Adds spacing between the boxes */
   margin: 0 auto; /* Centers the flex container */
   padding: 1rem;
-  max-width: 800px; /* Optional: Set a maximum width to control layout */
+  max-width: 800px; /* Control layout with maximum width */
   flex-wrap: wrap; /* Ensure boxes wrap on smaller screens */
 }
 
@@ -257,7 +257,6 @@ nav {
   flex: 1; /* Allow boxes to grow equally */
   padding: 1rem; /* Optional padding */
   padding-left:20px;
-  height:230px;
   box-sizing: border-box; /* Include padding in width calculation */
   min-width: 160px; /* Optional: Set a minimum width for the boxes */
 }
